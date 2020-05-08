@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!--- Uses readData.js and render.js to render a team view. Contains cards of tasks for each person -->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team View Rendering</title>
+    <!-- <link rel="stylesheet" href="../css/taskr-common.css" /> -->
+    <!-- <link rel="stylesheet" href="../css/profile-view.css" id="applicationStylesheet" /> -->
+    <link rel="stylesheet" href="/css/main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+    <script src="/js/jquery/jquery-3.3.1.min.js"></script>
+    <!-- <script src="../js/taskr-common.js"></script> -->
+    <script src="/js/render/team-view.js"></script>
+    <script src="/js/render/render-common.js"></script>
+    <script src='/js/functionality/team-view-func.js'></script>
+    <script src='/js/functionality/functionality-common.js'></script>
+</head>
+
+<body>
+    <div id='main'>
+
+        <!-- header (contains logo and team name) -->
+        <div id='header'>
+            <a href='choose-team.html'>
+                <span id='taskr'>Taskr</span>
+            </a>
+            <span id='team-name'>Team Name Here</span>
+        </div>
+
+
+        <!-- the 'add new member' card -->
+        <div id='new-member-card' class='card'>
+            <div class='card-header'>
+                <span class='label'>Add Team Member</span>
+                <hr>
+            </div>
+
+            <!-- input to add new member -->
+            <input id="new-member-input" class='input task' placeholder="type name">
+        </div>
+
+        <!-- extra white space at the bottom-->
+        <div id='footer'></div>
+    </div>
+
+    <!-- nav buttons always at bottom of page-->
+    <div id='nav' class='flex'>
+
+
+        <!-- team view button -->
+        <a id="team-view-link" href="">
+            <div id='team-view-button' class='button flex'>Team Task View</div>
+        </a>
+
+        <!-- profile view button -->
+        <a id="profile-view-link" href="">
+            <div id='profile-view-button' class='button flex'>Profile View (N/A) </div>
+        </a>
+    </div>
+</body>
+
+<!-- render -->
+<script>
+    const urlParams = new URLSearchParams(window.location.search);
+    teamid = urlParams.get('teamid');
+    renderTeamView(teamid);
+</script>
+
+</html>

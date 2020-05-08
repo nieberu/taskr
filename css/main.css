@@ -1,0 +1,236 @@
+/*
+    CSS file used by team-view-rendering.html, profile-view-rendering.html, and choose-team.html
+
+    for now, the checkmark and help icons are configured by javascript, not by this css file
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    font-family: Karla;
+}
+
+
+/* main contains everything except the footer */
+
+#main {
+    left: 50%;
+    transform: scale(1) translateX(-50%);
+    position: absolute;
+    text-align: left;
+    line-height: 50px;
+    font-size: 17px;
+    width: 387px;
+}
+
+
+/* header stuff */
+
+#header {
+    font-size: 16.5px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* the taskr logo */
+
+#taskr {
+    font-weight: bold;
+    color: rgba(255, 110, 67, 1);
+    position: absolute;
+    left: 10px;
+}
+
+
+/* divs that are direct descendents of main have padding so they all appear aligned */
+
+#main>div {
+    padding: 0px 10px 0px 10px;
+}
+
+
+/* a card is a box containing tasks */
+
+.card {
+    border: 1px solid silver;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+
+/* flexbox */
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.card-header {
+    width: auto;
+    /* wrap the card header for horizontal rule */
+    flex-wrap: wrap;
+}
+
+.task {
+    margin-bottom: 20px;
+}
+
+
+/* labels for anything */
+
+.label {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.task-description {
+    /* wraps if its gets past 260px */
+    width: 260px;
+    display: inline-block;
+    line-height: 150%;
+    margin-right: 30px;
+}
+
+.hide {
+    display: none
+}
+
+
+/* orange out urgent task descriptions */
+
+.urgent {
+    color: rgba(255, 110, 67, 1);
+}
+
+
+/* gray out completed tasks */
+
+#completed .task-description {
+    color: gray;
+}
+
+
+/* remove checkmark icon for completed tasks */
+
+#completed .checkmark-icon {
+    visibility: hidden;
+}
+
+
+/* available or not available */
+
+.status {
+    font-size: 16px;
+    float: right;
+    color: gray;
+}
+
+
+/* horizontal line */
+
+hr {
+    border: none;
+    border-bottom: 1px solid black;
+    margin-top: 0px;
+    margin-bottom: 15px;
+    width: 100%
+}
+
+svg {
+    /* all svgs are ellipses of this size */
+    width: 26px;
+    height: 25px;
+}
+
+
+/* icons with shadows */
+
+.shadow {
+    filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.149));
+}
+
+.checkmark-icon {
+    margin-right: 20px;
+}
+
+.plus-icon {
+    margin-left: 20px;
+}
+
+
+/* save div */
+
+#save {
+    text-align: center;
+    margin-top: 60px;
+}
+
+
+/* save orange button */
+
+#save-button {
+    color: white;
+    margin: auto;
+    width: 100px;
+    height: 50px;
+    background-color: rgba(253, 110, 67, 1);
+}
+
+
+/* inputs */
+
+.input {
+    width: 345px;
+    border: 1.3px solid black;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+
+/* footer */
+
+#footer {
+    height: 70px;
+}
+
+
+/* nav bar */
+
+#nav {
+    position: fixed;
+    justify-content: center;
+    bottom: 15px;
+    width: 387px;
+    /* center */
+    transform: scale(1) translateX(-50%);
+    left: 50%;
+}
+
+
+/* buttons */
+
+.button {
+    justify-content: center;
+    color: white;
+    border-radius: 14px;
+    background-color: rgba(253, 110, 67, 1);
+    width: 150px;
+    height: 50px;
+}
+
+#team-view-button {
+    background-color: gray;
+    margin-right: 40px;
+}
+
+
+/* so links arent underlined */
+
+a {
+    text-decoration: none;
+}

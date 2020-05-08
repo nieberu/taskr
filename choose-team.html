@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--- This html file is a test for readData.js and render.js to read from a text document and create
+        html elements.-->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose Team Rendering</title>
+    <!-- <link rel="stylesheet" href="../css/taskr-common.css" />
+    <link rel="stylesheet" href="../css/profile-view.css" id="applicationStylesheet" /> -->
+    <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/choose-team.css">
+    <script src="/js/jquery/jquery-3.3.1.min.js"></script>
+    <!-- <script src="../js/taskr-common.js"></script> -->
+    <script src="/js/render/choose-team.js"></script>
+    <script src="/js/functionality/choose-team-func.js"></script>
+</head>
+
+<body>
+
+    <!-- orange taskr ellipse (not in main because main has a width restriction) -->
+    <svg id="taskr-design">
+            <use xlink:href = "/css/taskr.svg#taskr-ellipse"></use>
+    </svg>
+
+    <div id='main'>
+        <!-- choose team prompt  -->
+        <div class='label-div'>
+            <span>Choose Your Team</span>
+        </div>
+
+        <!-- drop down menu  -->
+
+        <div id="select-div">
+            <select id='team-dropdown' name=teamid form='formid'>
+            </select>
+        </div>
+
+        <!-- form to submit team s-->
+        <form method='get' action='team-view.html' id='formid'>
+            <button type='submit'>submit</button>
+        </form>
+
+        <!-- create team prompt -->
+        <div class='label-div'>
+            <span>Create a Team</span>
+        </div>
+
+        <!-- add new team input -->
+        <div>
+            <input class='input' id='new-team-input' placeholder='type team name'>
+        </div>
+
+    </div>
+
+</body>
+
+<!-- render -->
+<script>
+    renderChooseTeam();
+</script>
+
+</html>

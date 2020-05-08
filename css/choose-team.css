@@ -1,0 +1,43 @@
+/** CSS file specific to choose-team.html */
+
+
+/* orange ellipses SVG */
+
+#taskr-design {
+    width: 214px;
+    height: 214px;
+    margin-bottom: 135px;
+}
+
+#main {
+    text-align: center;
+}
+
+#select-div {
+    margin-bottom: 20px;
+}
+
+
+/* drop down menu for teams */
+
+#team-dropdown {
+    font-family: inherit;
+    font-size: inherit;
+    padding: 15px 17px 15px 17px;
+    border-radius: 25px;
+    /* -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none; */
+    background-color: rgba(253, 110, 67, 1);
+    color: white;
+}
+
+.label-div {
+    margin-bottom: -5px;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.input {
+    width: 275px;
+}

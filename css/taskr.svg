@@ -1,0 +1,149 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+   <defs>
+
+
+      <!-- *******************************************************************************
+                                    Compound symbols 
+         (used for rendering, compounded because css attributes will likely be unchanged)
+      *************************************************************************************-->
+
+      <!-- white ellipse with a gray checkmark-->
+      <symbol id="checkmark-icon">
+         <ellipse fill="rgba(255,255,255,255)" rx="13" ry="12.5" cx="13" cy="12.5"></ellipse>
+         <path fill="rgba(121, 121, 121, 1)" transform="scale(1.1) translate(3, 2)" stroke="rgba(121, 121, 121, 1)" stroke-width="0.5px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" viewbox="3.4 5.6 11.073 8.591" d="M 6.923291206359863 12.39560604095459 L 4.280822277069092 9.703003883361816 L 3.399999380111694 10.60053825378418 L 6.923291206359863 14.19067192077637 L 14.47319889068604 6.497532367706299 L 13.59237575531006 5.599998474121094 L 6.923291206359863 12.39560604095459 Z"></path>
+      </symbol>
+
+      <!-- blue ellipse with a white checkmark (probably not used) -->
+      <symbol id="checkmark-icon-completed">
+         <ellipse fill="rgba(0,144,255,1)" rx="13" ry="12.5" cx="13" cy="12.5"></ellipse>
+         <path fill="rgba(255,255,255,1)" transform="scale(1.1) translate(3, 2)" stroke="rgba(255, 255, 255, 1)" stroke-width="0.5px" viewbox="3.4 5.6 11.073 8.591" d="M 6.923291206359863 12.39560604095459 L 4.280822277069092 9.703003883361816 L 3.399999380111694 10.60053825378418 L 6.923291206359863 14.19067192077637 L 14.47319889068604 6.497532367706299 L 13.59237575531006 5.599998474121094 L 6.923291206359863 12.39560604095459 Z"></path>
+      </symbol>
+
+      <!-- red ellipse with a white exclaimation -->
+      <symbol id="help-icon-red">
+         <ellipse fill="rgba(255,31,31,1)" rx="13" ry="12.5" cx="13" cy="12.5"></ellipse>
+         <rect fill="white" x="12" y="6" width="2" height="6"></rect>
+         <ellipse fill="rgba(255,255,255,1)" rx="1.336" ry="1.336" cx="13" cy="16"></ellipse>
+      </symbol>
+
+      <!-- gray ellipse with a white exclaimation -->
+      <symbol id="help-icon-gray">
+         <ellipse fill="white" rx="13" ry="12.5" cx="13" cy="12.5"></ellipse>
+         <rect fill="gray" x="12" y="6" width="2" height="6"></rect>
+         <ellipse fill="gray" rx="1.336" ry="1.336" cx="13" cy="16"></ellipse>
+      </symbol>
+
+      <!-- lighter red ellipse with a white exclaimation -->
+      <symbol id="help-icon-completed">
+         <ellipse fill="rgba(248, 108, 108, 1)" rx="13" ry="12.5" cx="13" cy="12.5"></ellipse>
+         <rect fill="white" x="12" y="6" width="2" height="6"></rect>
+         <ellipse fill="rgba(255,255,255,1)" rx="1.336" ry="1.336" cx="13" cy="16"></ellipse>
+      </symbol>
+
+      <!-- white ellipse with a blue plus-sign-->
+      <symbol id="plus-icon">
+         <ellipse fill="rgba(255,255,255,255)" rx="13" ry="12.5" cx="13" cy="12.5"></ellipse>
+         <path fill="rgba(0,144,255,1)" stroke="rgba(0,144,255,1)" stroke-width="1px" stroke-linejoin ="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto"
+          transform="translate(4,3)" d="M 13.05188846588135 9.601078033447266 L 9.601078033447266 9.601078033447266 L 9.601078033447266 13.05188846588135 L 8.450808525085449 13.05188846588135 L 8.450808525085449 9.601078033447266 L 5 9.601078033447266 L 5 8.450808525085449 L 8.450808525085449 8.450808525085449 L 8.450808525085449 5 L 9.601078033447266 5 L 9.601078033447266 8.450808525085449 L 13.05188846588135 8.450808525085449 L 13.05188846588135 9.601078033447266 Z"></path>
+      </symbol>
+
+      <!-- Two orange ellipses on choose-team.html -->
+      <symbol id="taskr-ellipse">
+         <ellipse fill="rgba(253,110,67,1)" rx="107px" ry="107px" cx="59px" cy="80px"></ellipse>
+            <ellipse fill="rgba(253,110,67,1)" rx="35px" ry="35px" cx="147px" cy="46px"> </ellipse>
+            <text x="40px" y="90px" fill="white" font-weight="bold" font-size="22px" letter-spacing="1px">Taskr</text>
+      </symbol>
+
+      <!-- *******************************************************************************
+                                       Standard symbols 
+      *************************************************************************************-->
+
+      <symbol id="down-arrow" viewBox="0 0 10.666 13.575">
+         <path fill="rgba(250,250,250,1)" d="M -1.05868276598329e-25 0 L -8.076587703391364e-25 13.57460308074951 L 10.66576194763184 6.787302017211914 L -1.05868276598329e-25 0 Z"></path>
+      </symbol>
+      <symbol id="checkmark" viewBox="3.4 5.6 11.073 8.591">
+         <path d="M 6.923291206359863 12.39560604095459 L 4.280822277069092 9.703003883361816 L 3.399999380111694 10.60053825378418 L 6.923291206359863 14.19067192077637 L 14.47319889068604 6.497532367706299 L 13.59237575531006 5.599998474121094 L 6.923291206359863 12.39560604095459 Z"></path>
+      </symbol>
+      <symbol id="exclaimation" viewBox="10 3 2.315 6.946">
+         <path d="M 9.999998092651367 2.999999761581421 L 12.31533908843994 2.999999761581421 L 12.31533908843994 9.946122169494629 L 9.999998092651367 9.946122169494629 L 9.999998092651367 2.999999761581421 Z"></path>
+      </symbol>
+      <symbol id="exclaimation-dot">
+         <ellipse fill="rgba(255,255,255,1)" rx="1.336" ry="1.336" cx="1.336" cy="1.336"></ellipse>
+      </symbol>
+      <symbol id="plus-sign" viewBox="5 5 8.052 8.052">
+         <path d="M 13.05188846588135 9.601078033447266 L 9.601078033447266 9.601078033447266 L 9.601078033447266 13.05188846588135 L 8.450808525085449 13.05188846588135 L 8.450808525085449 9.601078033447266 L 5 9.601078033447266 L 5 8.450808525085449 L 8.450808525085449 8.450808525085449 L 8.450808525085449 5 L 9.601078033447266 5 L 9.601078033447266 8.450808525085449 L 13.05188846588135 8.450808525085449 L 13.05188846588135 9.601078033447266 Z"></path>
+      </symbol>
+      <symbol id="strikeout">
+         <path d="M 0 0 L 368 0"></path>
+      </symbol>
+      <symbol id="svg-rect-line">
+         <rect fill="rgba(28,28,28,1)" rx="0" ry="0" x="0" y="0" width="367" height="1"></rect>
+      </symbol>
+      <symbol id="svg-rect-1">
+         <rect rx="6" ry="6" x="0" y="0" width="381" height="287"></rect>
+      </symbol>
+      <symbol id="svg-rect-2">
+         <rect rx="6" ry="6" x="0" y="0" width="381" height="249"></rect>
+      </symbol>
+      <symbol id="svg-rect-3">
+         <rect rx="6" ry="6" x="0" y="0" width="381" height="201"></rect>
+      </symbol>
+      <symbol id="svg-rect-4">
+         <rect rx="6" ry="6" x="0" y="0" width="381" height="159"></rect>
+      </symbol>
+      <symbol id="svg-rect-5">
+         <rect rx="6" ry="6" x="0" y="0" width="381" height="111"></rect>
+      </symbol>
+      <symbol id="svg-rect-6">
+         <rect rx="6" ry="6" x="0" y="0" width="381" height="79"></rect>
+      </symbol>
+      <symbol id="svg-rect-7">
+         <rect rx="6" ry="6" x="0" y="0" width="381" height="287"></rect>
+      </symbol>
+      <symbol id="svg-rect-8">
+         <rect rx="6" ry="6" x="0" y="0" width="381" height="130"></rect>
+      </symbol>
+      <symbol id="svg-rect-9">
+         <rect rx="6" ry="6" x="0" y="0" width="381" height="287"></rect>
+      </symbol>
+      <symbol id="svg-rect-10">
+         <rect rx="6" ry="6" x="0" y="0" width="381" height="511"></rect>
+      </symbol>
+      <symbol id="svg-rect-11">
+         <rect rx="6" ry="6" x="0" y="0" width="381" height="473"></rect>
+      </symbol>
+      <symbol id="svg-rect-save">
+         <rect rx="17" ry="17" x="0" y="0" width="129" height="52"></rect>
+      </symbol>
+      <symbol id="svg-profile-selected">
+         <rect fill="rgba(253,110,67,1)" rx="20" ry="20" x="20" y="0" width="171" height="44"></rect>
+      </symbol>
+      <symbol id="svg-profile-not-selected">
+         <rect fill="rgba(121,121,121,1)" rx="20" ry="20" x="20" y="0" width="171" height="44"></rect>
+      </symbol>
+      <symbol id="svg-team-task-view-selected">
+         <rect fill="rgba(253,110,67,1)" rx="20" ry="20" x="10" y="0" width="171" height="44"></rect>
+      </symbol>
+      <symbol id="svg-team-task-view-not-selected">
+         <rect fill="rgba(121,121,121,1)" rx="20" ry="20" x="10" y="0" width="171" height="44"></rect>
+      </symbol>
+      <symbol id="svg-ellipse-help">
+         <ellipse fill="rgba(255,31,31,1)" rx="13" ry="12.5" cx="13" cy="12.5"></ellipse>
+      </symbol>
+      <symbol id="svg-ellipse-help-completed">
+         <ellipse fill="rgba(255,31,31,1)" rx="13" ry="12.5" cx="13" cy="12.5"></ellipse>
+      </symbol>
+      <symbol id="svg-ellipse-active">
+         <ellipse fill="rgba(255,255,255,255)" rx="13" ry="12.5" cx="13" cy="12.5"></ellipse>
+      </symbol>
+      <symbol id="svg-ellipse-completed">
+         <ellipse fill="rgba(0,144,255,1)" rx="12.5" ry="12.5" cx="13" cy="12.5"></ellipse>
+      </symbol>
+      <symbol id="svg-rect-add-team-name">
+         <rect fill="transparent" stroke="rgba(2,2,2,1)" stroke-width="0.5px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" rx="4" ry="4" x="0" y="0" width="275" height="41"></rect>
+      </symbol>
+      <symbol id="svg-rect-add-team-member">
+         <rect fill="transparent" stroke="rgba(2,2,2,1)" stroke-width="0.5px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" rx="4" ry="4" x="0" y="0" width="367" height="41"></rect>
+      </symbol>
+   </defs>
+</svg>
